@@ -1,55 +1,52 @@
 .container {
+    border: 1px solid black;
     display: grid;
-    grid-template-areas: 
-        "l"
-        "h1"
-        "h2"
-        "form"
-        "content"
-        "copyright"
-        "footer";
+    grid-template-columns: 350px 1fr 350px;
     grid-gap: 10px;
     font-size: 11px; 
     text-align: center;
     color: hsl(228, 45%, 44%);
 }
 
+.container > * {
+    grid-column: 2;
+    min-width: 0;
+}
+
 .logo {
     padding: 25px;
-    grid-area: l;
 }
 
 .h1 {
     background-color: aquamarine;
     padding: 25px;
-    grid-area: h1;
 }
 
 .h2 {
     background-color: blue;
     padding: 25px;
-    grid-area: h2;
 }
 
 .form {
     padding: 25px;
     background-color: antiquewhite;
-    grid-area: form;
 }
 
 .content {
-    padding: 25px;
-    grid-area: content;
+    border: 2px solid black;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    min-width: 0;
 }
 
 .copyright {
     background-color: blueviolet;
     padding: 25px;
-    grid-area: copyright;
 }
 
 .footer {
     background-color: brown;
     padding: 25px;
-    grid-area: footer;
 }
