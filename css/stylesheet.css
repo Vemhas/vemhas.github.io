@@ -23,31 +23,24 @@ img {
 }
 
 .h1 {
-    background-color: aquamarine;
     padding: 25px;
 }
 
 .h2 {
-    background-color: blue;
     padding: 25px;
 }
 
 .form {
-    padding: 25px;
-    background-color: antiquewhite;
 }
 
 .content {
-    border: 2px solid black;
     object-fit: cover;
 }
 
 .copyright {
-    background-color: blueviolet;
     padding: 25px;
 }
 
 .footer {
-    background-color: brown;
     padding: 25px;
 }
